@@ -1,0 +1,151 @@
+/* nav */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.6);
+    border-bottom: 1px solid #fff;
+}
+
+nav .logo {
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a:hover {
+    background: rgba(0,0,0,0.7);
+    border-radius: 6px;
+}
+
+/* form box */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+input[type="submit"] {
+    background-color: grey;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: darkgrey;
+}
+
+
+
+body {
+    background-image: url('res.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+
+#reservation-form {
+    background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 50px auto;
+  max-width: 600px;
+  position: relative;
+  z-index: 20;
+  margin-top: 300px;
+}
+
+#reservation-form:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid white; 
+    opacity: 0.7;
+}
+
+  #background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.5;
+  }
+
+
+  /* Media query for screens smaller than 768px */
+
+
+@media only screen and (max-width: 768px) {
+    .column {
+      width: 100%;
+    }
+    
+    .row {
+      padding-top: 100px;
+    }
+    
+    .menu-item {
+      width: 100%;
+    }
+  }
