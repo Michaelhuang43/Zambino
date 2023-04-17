@@ -80,5 +80,5 @@ section{
 }   
 
 h1 {
-    transforum: uppercase;
+   text-transform: uppercase;
 }
